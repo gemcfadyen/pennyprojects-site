@@ -2,8 +2,7 @@ import React from "react"
 import Link from "gatsby-link";
 
 export default () => <div style={{color: `blue`, margin: '3rem auto', maxWidth: 600}}>
-  <h1>Hello Georgina!</h1>
-  <p>hello hello hello</p>
+  <h1>Penny Projects Ltd</h1>
   <img src="https://source.unsplash.com/random/400x200" alt="" />
 
   <blockquote>
@@ -17,12 +16,4 @@ export default () => <div style={{color: `blue`, margin: '3rem auto', maxWidth: 
       </em>
     </p>
   </blockquote>
-
-  <div>
-    <Link to="/about/">About</Link>
-  </div>
-  <div>
-    <Link to="/page-2/">Link</Link>
-  </div>
-
 </div>
