@@ -1,0 +1,2 @@
+webpackJsonp([0xc19374f83753],{205:function(e,t,u){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=u(4),a=l(n),o=u(55),f=l(o);t.default=function(){return a.default.createElement(f.default,null,a.default.createElement("h1",null,"Blog Page"),"Coming Soon...")},e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-blog-js-a29057e5e9fd08a480d7.js.map
