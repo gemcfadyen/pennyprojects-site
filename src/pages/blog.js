@@ -1,7 +1,10 @@
 import React from "react";
+import Container from "../components/container";
 
 export default () => (
-  <div>
-    <p>Blog Page</p>
-  </div>
+  <Container>
+    <h1>Blog Page</h1>
+
+    Coming Soon...
+  </Container>
 );

@@ -23,5 +23,5 @@ const ListLink = props =>
         </ul>
       </header>
       {children()}
-      <Footer></Footer>
+      <Footer/>
     </div>
