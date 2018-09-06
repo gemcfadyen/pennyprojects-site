@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-bb7b0ed2a8d650e50528.js",
-      "component---src-pages-index-js-bb7b0ed2a8d650e50528.js.map"
+      "component---src-pages-index-js-6ab7748003674c7deb07.js",
+      "component---src-pages-index-js-6ab7748003674c7deb07.js.map"
     ],
     "path---blog": [
       "path---blog-a0e39f21c11f6a62c5ab.js",
@@ -13,16 +13,16 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-65cdcbdee3593d0feac3.js",
-      "component---src-layouts-index-js-65cdcbdee3593d0feac3.js.map"
+      "component---src-layouts-index-js-5e4bdf6f500a5f9af42f.js",
+      "component---src-layouts-index-js-5e4bdf6f500a5f9af42f.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-7e44ff48ba2e05d7744e.js",
-      "commons-7e44ff48ba2e05d7744e.js.map"
+      "commons-9a46c8527fe5edfd2595.js",
+      "commons-9a46c8527fe5edfd2595.js.map"
     ],
     "path---talks": [
       "path---talks-a0e39f21c11f6a62c5ab.js",
@@ -33,16 +33,16 @@
       "component---src-pages-blog-js-a29057e5e9fd08a480d7.js.map"
     ],
     "component---src-pages-talks-js": [
-      "component---src-pages-talks-js-8d32823f740b8d824e2a.js",
-      "component---src-pages-talks-js-8d32823f740b8d824e2a.js.map"
+      "component---src-pages-talks-js-9540ff46c7c5e6042e80.js",
+      "component---src-pages-talks-js-9540ff46c7c5e6042e80.js.map"
     ],
     "app": [
-      "app-13cdf701d588fab9ae34.js",
-      "app-13cdf701d588fab9ae34.js.map"
+      "app-17a57f52283591f07e15.js",
+      "app-17a57f52283591f07e15.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-c3e3da9287d63395314e.js",
-      "component---src-pages-about-js-c3e3da9287d63395314e.js.map"
+      "component---src-pages-about-js-b87a8c92eac6340f2732.js",
+      "component---src-pages-about-js-b87a8c92eac6340f2732.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
