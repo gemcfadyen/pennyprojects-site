@@ -92,11 +92,9 @@ export default () => (
         </NormalText>
       </StyledTalk>
       <StyledTalk>
-        <VideoWrapper>
-          <VideoIFrame
-            src="https://codesync.global/speaker/georgina-mcfadyen">
-          </VideoIFrame>
-        </VideoWrapper>
+        <ExternalLink href="https://codesync.global/speaker/georgina-mcfadyen" width="210" height="182">
+          Click here to view the event
+        </ExternalLink>
       </StyledTalk>
 
       <StyledTalk>
@@ -126,11 +124,10 @@ export default () => (
       </StyledTalk>
 
       <StyledTalk>
-        <VideoWrapper>
-          <VideoIFrame
-            src="http://www.elixirconf.eu/elixirconf2017/georgina-mcfadyen">
-          </VideoIFrame>
-        </VideoWrapper>
+
+        <ExternalLink href="http://www.elixirconf.eu/elixirconf2017/georgina-mcfadyen" width="210" height="182">
+          Click here to view the event
+        </ExternalLink>
       </StyledTalk>
       <StyledTalk>
         <BoldText> Microservices Under the Umbrella </BoldText>

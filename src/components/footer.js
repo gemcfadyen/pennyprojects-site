@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Wrapper = styled.section`
     padding: 4em;
     background: papayawhip;
-    `;
+`;
 
 const StyledFooterDiv= styled.div`
    margin: "1rem auto";
-   maxWidth: 600
+   maxWidth: 800
 `;
 
 const ListWithoutBullet = styled.ul`
@@ -16,8 +16,8 @@ const ListWithoutBullet = styled.ul`
 `;
 
 const SizedImage = styled.img`
-  height: 75%;
-  width: 20%;
+  height: 80%;
+  width: 40%;
 `;
 
 const PaddedLink = styled.a`
@@ -26,6 +26,8 @@ const PaddedLink = styled.a`
 
 const StyledListItem = styled.li`
   display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default ({ children }) => (
