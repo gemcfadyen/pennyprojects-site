@@ -1,0 +1,2 @@
+webpackJsonp([80940397702637],{332:function(t,o){t.exports={data:{markdownRemark:{html:"<p>yo yo yo!</p>",frontmatter:{date:"November 03, 2017",path:"/blog/two",title:"My earlier blog post"}}},pathContext:{}}}});
+//# sourceMappingURL=path---blog-two-8a79903fdfe54dd3d63d.js.map
