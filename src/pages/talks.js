@@ -56,6 +56,7 @@ export default () => (
     Over the last few years I have made several public apperances in the form of talks and workshops. Here are details on sessions I've held in the Software Community all over Europe:
 
     <p/>
+
     <StyledGrid>
 
       <StyledTalk>
@@ -73,7 +74,7 @@ export default () => (
 
       <StyledTalk>
         <VideoWrapper>
-          <VideoIFrame
+          <VideoIFrame width="210" height="182"
             src="http://doc.honeypot.io/elixir-documentary-2018/">
           </VideoIFrame>
         </VideoWrapper>
@@ -124,7 +125,6 @@ export default () => (
       </StyledTalk>
 
       <StyledTalk>
-
         <ExternalLink href="http://www.elixirconf.eu/elixirconf2017/georgina-mcfadyen" width="210" height="182">
           Click here to view the event
         </ExternalLink>
