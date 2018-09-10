@@ -40,6 +40,7 @@ const VideoIFrame = styled.iframe`
   left: 0;
   width: 100%;
   height: 100%;
+  scrolling: "no";
 `;
 
 const BoldText = styled.h1`
@@ -75,7 +76,7 @@ export default () => (
       <StyledTalk>
         <VideoWrapper>
           <VideoIFrame width="210" height="182"
-            src="http://doc.honeypot.io/elixir-documentary-2018/">
+            src="https://www.youtube.com/embed/lxYFOM3UJzo">
           </VideoIFrame>
         </VideoWrapper>
       </StyledTalk>
