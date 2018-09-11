@@ -5,8 +5,8 @@
       "component---src-pages-index-js-05af7dbc842e12f34ec1.js.map"
     ],
     "path---blog": [
-      "path---blog-e09a1b7d9ef36ceadad1.js",
-      "path---blog-e09a1b7d9ef36ceadad1.js.map"
+      "path---blog-0eae22372db2dd0ed17c.js",
+      "path---blog-0eae22372db2dd0ed17c.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -28,6 +28,10 @@
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---blog-code-smells": [
+      "path---blog-code-smells-d88af54765480b9463ff.js",
+      "path---blog-code-smells-d88af54765480b9463ff.js.map"
+    ],
     "commons": [
       "commons-c9acf4e3787ec326228c.js",
       "commons-c9acf4e3787ec326228c.js.map"
@@ -45,8 +49,8 @@
       "component---src-pages-talks-js-0236cbaf3ba8fd3b277f.js.map"
     ],
     "app": [
-      "app-aa0abcfb409c21061753.js",
-      "app-aa0abcfb409c21061753.js.map"
+      "app-d1581c9bff04812b1b50.js",
+      "app-d1581c9bff04812b1b50.js.map"
     ]
   }
 }
