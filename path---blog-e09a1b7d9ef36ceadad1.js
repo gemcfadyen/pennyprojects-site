@@ -1,0 +1,2 @@
+webpackJsonp([49683490770531],{331:function(e,a){e.exports={data:{allMarkdownRemark:{edges:[{node:{excerpt:"Read my article about using an Elixir Umbrella on the 8th Light blog  here",id:"/Users/georgina/Documents/Waza/pp/gatsby-pp-site/tutorial-part-one/src/blogarticles/01-05-2017/index.md absPath of file >>> MarkdownRemark",frontmatter:{title:"Using an Elixir Umbrella",date:"May 01, 2017",excerpt:"Published Blog introducing Elixir Umbrellas",path:"/blog/elixir-umbrellas"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---blog-e09a1b7d9ef36ceadad1.js.map
