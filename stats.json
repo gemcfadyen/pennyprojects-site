@@ -5,8 +5,8 @@
       "component---src-pages-index-js-05af7dbc842e12f34ec1.js.map"
     ],
     "path---blog": [
-      "path---blog-62406fbfe1375fb5c5e6.js",
-      "path---blog-62406fbfe1375fb5c5e6.js.map"
+      "path---blog-6635b66f371f8c3ae2cf.js",
+      "path---blog-6635b66f371f8c3ae2cf.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -15,6 +15,10 @@
     "path---blog-elixir-umbrellas": [
       "path---blog-elixir-umbrellas-90559b76155e07d55540.js",
       "path---blog-elixir-umbrellas-90559b76155e07d55540.js.map"
+    ],
+    "path---blog-tdd": [
+      "path---blog-tdd-53f8afe7ccf2e1156466.js",
+      "path---blog-tdd-53f8afe7ccf2e1156466.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-415ee98bd954c73bfb26.js",
@@ -53,8 +57,12 @@
       "component---src-pages-talks-js-0236cbaf3ba8fd3b277f.js.map"
     ],
     "app": [
-      "app-6be783472f4d7367e6aa.js",
-      "app-6be783472f4d7367e6aa.js.map"
+      "app-39348b50ac412841f2cd.js",
+      "app-39348b50ac412841f2cd.js.map"
+    ],
+    "path---blog-craftsman-doesnt-blame-tools": [
+      "path---blog-craftsman-doesnt-blame-tools-9f8962993da89a554dbb.js",
+      "path---blog-craftsman-doesnt-blame-tools-9f8962993da89a554dbb.js.map"
     ]
   }
 }
