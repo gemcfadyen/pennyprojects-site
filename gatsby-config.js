@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/gatsby-spike`,
   siteMetadata: {
     title: `Penny Projects Ltd`,
   },
