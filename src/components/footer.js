@@ -36,12 +36,12 @@ export default ({ children }) => (
       <ListWithoutBullet>
         <StyledListItem>
           <PaddedLink href="https://www.github.com/gemcfadyen">
-            <SizedImage src="github.png" alt="github logo"/>
+            <SizedImage src="github.jpeg" alt="github logo"/>
           </PaddedLink>
 
           <PaddedLink href="https://www.twitter.com/gemcfadyen">
 
-            <SizedImage src="twitter.png" alt="twitterlogo"/>
+            <SizedImage src="twitter.jpeg" alt="twitterlogo"/>
           </PaddedLink>
 
           <PaddedLink href="https://uk.linkedin.com/in/georgina-mcfadyen-03942b104">
