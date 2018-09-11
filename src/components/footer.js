@@ -45,7 +45,7 @@ export default ({ children }) => (
           </PaddedLink>
 
           <PaddedLink href="https://uk.linkedin.com/in/georgina-mcfadyen-03942b104">
-            <SizedImage src="linkedin.png" alt="linkedin logo"/>
+            <SizedImage src="linkedin.jpeg" alt="linkedin logo"/>
           </PaddedLink>
         </StyledListItem>
       </ListWithoutBullet>
