@@ -1,26 +1,56 @@
 import React from "react";
 import Link from "gatsby-link";
 import Footer from "../components/footer";
+import styled from "styled-components";
+
+const PageStyleForWholeSite = styled.div`
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1.25rem 1rem;
+`;
+
+const StyledList = styled.ul`
+  listStyle: none;
+  float: right;
+`;
+
+const StyledHeader = styled.header`
+ marginBottom: 1.5rem;
+`;
+
+const StyledLink = styled(Link)`
+  textShadow: none;
+  backgroundImage: none;
+`;
+
+const InlineHeader = styled.h3`
+  display: inline;
+`;
+
+const StyledListElement = styled.li`
+  display: inline-block;
+  margin-right: 1rem;
+`;
 
 const ListLink = props =>
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <StyledListElement>
     <Link to={props.to}>
       {props.children}
     </Link>
-  </li>
+  </StyledListElement>
 
   export default ({ children }) =>
-    <div style={{ margin: `0 auto`, maxWidth: 800, padding: `1.25rem 1rem` }}>
-      <header style={{ marginBottom: `1.5rem` }}>
-        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline` }}>Penny Projects Ltd</h3>
-        </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
+    <PageStyleForWholeSite>
+      <StyledHeader>
+        <StyledLink to="/">
+          <InlineHeader>Penny Projects Ltd</InlineHeader>
+        </StyledLink>
+        <StyledList>
           <ListLink to="/">Home</ListLink>
           <ListLink to="/blog">Blog</ListLink>
           <ListLink to="/talks">Talks</ListLink>
-        </ul>
-      </header>
+        </StyledList>
+      </StyledHeader>
       {children()}
       <Footer/>
-    </div>
+    </PageStyleForWholeSite>
