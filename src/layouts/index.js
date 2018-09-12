@@ -7,6 +7,8 @@ const PageStyleForWholeSite = styled.div`
   margin: 0 auto;
   max-width: 800px;
   padding: 1.25rem 1rem;
+  background: lightBlue;
+  box-shadow: inset 0 0 0 2px darkBlue;
 `;
 
 const StyledList = styled.ul`
