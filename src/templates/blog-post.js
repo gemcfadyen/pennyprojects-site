@@ -51,7 +51,7 @@ export default function Template({
           )}
           {next && (
             <BlogLink to={next.frontmatter.path}>
-              → {next.frontmatter.title}
+              {next.frontmatter.title} →
             </BlogLink>
           )}
 
