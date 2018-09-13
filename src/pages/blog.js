@@ -1,25 +1,43 @@
 import React from "react";
 import Container from "../components/container";
 import Link from 'gatsby-link';
+import styled from "styled-components";
+
+const BoldText = styled.h1`
+  font-weight: bold;
+  font-size: 15px;
+`;
+
+const StyledLink = styled(Link)`
+  font-weight: bold;
+  font-size: 15px;
+`;
+
+const StyledExerpt = styled.p`
+  font-size: 15px;
+`;
+
+const StyledBlog = styled.div`
+  border: 2px dotted darkBlue;
+  margin-bottom: 5px;
+  text-align: center;
+`;
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <Container>
-      <div className="blog-posts">
+      <div>
         {posts
             .filter(post => post.node.frontmatter.title.length > 0)
             .map(({ node: post }) => {
 
-              console.log(post)
               return (
-                <div className="blog-post-preview" key={post.id}>
-                  <h1>
-                    <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-                  </h1>
-                  <h2>{post.frontmatter.date}</h2>
-                  <p>{post.frontmatter.excerpt}</p>
-                </div>
+                <StyledBlog key={post.id}>
+                  <StyledLink to={post.frontmatter.path}>{post.frontmatter.title}</StyledLink>
+                  <BoldText>{post.frontmatter.date}</BoldText>
+                  <StyledExerpt>{post.frontmatter.excerpt}</StyledExerpt>
+                </StyledBlog>
               );
             })}
           </div>

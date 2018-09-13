@@ -1,4 +1,19 @@
 import React from "react";
+import styled from "styled-components";
+
+const BoldText = styled.h1`
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+`;
+
+const BlogContent = styled.div`
+  font-size: 15px;
+`;
+
+const BlogPostContainer = styled.div`
+`;
 
 export default function Template({
   data
@@ -6,13 +21,14 @@ export default function Template({
   const post = data.markdownRemark;
   return (
     <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
+      <BlogPostContainer>
+        <BoldText>{post.frontmatter.title}</BoldText>
+        <hr/>
+        <BlogContent
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-      </div>
+        <hr/>
+      </BlogPostContainer>
     </div>
   );
 }
