@@ -11,17 +11,28 @@ const BoldText = styled.h1`
 
 const BlogContent = styled.div`
   font-size: 15px;
+  text-align: left;
 `;
 
 const BlogPostContainer = styled.div`
+  align-content: center;
+  text-align: center;
+`;
+
+const BlogLink = styled(Link)`
+ width: 50%;
+ font-size: 12px;
+`;
+
+const NavigateBlogs = styled.p`
+  display: flex;
+  flex-direction: row;
 `;
 
 export default function Template({
   data, pathContext }) {
   const post = data.markdownRemark;
   const {next, prev} = pathContext;
-  console.log("next is" + next)
-  console.log("next is" + prev)
 
   return (
     <div className="blog-post-container">
@@ -32,24 +43,23 @@ export default function Template({
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <hr/>
-        <p>
+        <NavigateBlogs>
           {prev &&  (
-            <Link to={prev.frontmatter.path}>
-              Previous: {prev.frontmatter.title}
-            </Link>
+            <BlogLink to={prev.frontmatter.path}>
+              ← {prev.frontmatter.title}
+            </BlogLink>
           )}
-          <br/>
           {next && (
-            <Link to={next.frontmatter.path}>
-              Next: {next.frontmatter.title}
-            </Link>
+            <BlogLink to={next.frontmatter.path}>
+              → {next.frontmatter.title}
+            </BlogLink>
           )}
-        </p>
+
+        </NavigateBlogs>
       </BlogPostContainer>
     </div>
   );
 }
-
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
