@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'gatsby-link';
 import styled from "styled-components";
 
 const BoldText = styled.h1`
@@ -16,9 +17,12 @@ const BlogPostContainer = styled.div`
 `;
 
 export default function Template({
-  data
-}) {
+  data, pathContext }) {
   const post = data.markdownRemark;
+  const {next, prev} = pathContext;
+  console.log("next is" + next)
+  console.log("next is" + prev)
+
   return (
     <div className="blog-post-container">
       <BlogPostContainer>
@@ -28,6 +32,19 @@ export default function Template({
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
         <hr/>
+        <p>
+          {prev &&  (
+            <Link to={prev.frontmatter.path}>
+              Previous: {prev.frontmatter.title}
+            </Link>
+          )}
+          <br/>
+          {next && (
+            <Link to={next.frontmatter.path}>
+              Next: {next.frontmatter.title}
+            </Link>
+          )}
+        </p>
       </BlogPostContainer>
     </div>
   );

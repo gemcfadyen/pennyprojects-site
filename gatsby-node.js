@@ -25,12 +25,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       if (result.errors) {
         return Promise.reject(result.errors);
       }
-      result.data.allMarkdownRemark.edges
-        .forEach(({ node }) => {
+      const posts = result.data.allMarkdownRemark.edges
+
+        posts.forEach(({ node }, index) => {
           createPage({
             path: node.frontmatter.path,
             component: blogPostTemplate,
-            context: {} // additional data can be passed via context
+            context: {
+              prev: index === 0 ? null : posts[index-1].node,
+              next: index === (posts.length - 1) ? null: posts[index+1].node
+            } // additional data can be passed via context
           });
         });
     });
