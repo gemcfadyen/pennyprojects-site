@@ -54,7 +54,7 @@ const NormalText = styled.text`
 
 export default () => (
   <Container>
-    Over the last few years I have made several public apperances in the form of talks and workshops. Here are details on sessions I've held in the Software Community all over Europe:
+    Over the last few years I have made several public appearances in the form of talks and workshops. Here are details on sessions I've held in the Software Community all over Europe:
 
     <p/>
 
