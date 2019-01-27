@@ -1,6 +1,6 @@
 # PennyProjects.co.uk
 
-This is the code used for the website https://www.pennyprojects.co.uk
+This is the code used for the website https://pennyprojects.co.uk
 
 # Technology
 
