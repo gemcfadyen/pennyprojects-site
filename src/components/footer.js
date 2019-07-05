@@ -43,7 +43,7 @@ export default ({ children }) => (
             <SizedImage src="https://pennyprojects.co.uk/twitter.jpeg" alt="twitterlogo"/>
           </PaddedLink>
 
-          <PaddedLink href="https://uk.linkedin.com/in/georgina-mcfadyen-03942b104">
+          <PaddedLink href="https://www.linkedin.com/in/georgina-m-03942b104">
             <SizedImage src="https://pennyprojects.co.uk/linkedin.jpeg" alt="linkedin logo"/>
           </PaddedLink>
         </StyledListItem>
