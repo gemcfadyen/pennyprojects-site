@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/container";
 import Link from 'gatsby-link';
 import styled from "styled-components";
+import BlogCards from "../components/cards/BlogCards";
 
 const BoldText = styled.h1`
   font-weight: bold;
@@ -26,21 +27,23 @@ const StyledBlog = styled.div`
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <Container>
-      <div>
-        {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }) => {
 
-              return (
-                <StyledBlog key={post.id}>
-                  <StyledLink to={post.frontmatter.path}>{post.frontmatter.title}</StyledLink>
-                  <BoldText>{post.frontmatter.date}</BoldText>
-                  <StyledExerpt>{post.frontmatter.excerpt}</StyledExerpt>
-                </StyledBlog>
-              );
-            })}
-          </div>
+    <Container>
+      <BlogCards/>
+      {/*<div>*/}
+      {/*  {posts*/}
+      {/*      .filter(post => post.node.frontmatter.title.length > 0)*/}
+      {/*      .map(({ node: post }) => {*/}
+
+      {/*        return (*/}
+      {/*          <StyledBlog key={post.id}>*/}
+      {/*            <StyledLink to={post.frontmatter.path}>{post.frontmatter.title}</StyledLink>*/}
+      {/*            <BoldText>{post.frontmatter.date}</BoldText>*/}
+      {/*            <StyledExerpt>{post.frontmatter.excerpt}</StyledExerpt>*/}
+      {/*          </StyledBlog>*/}
+      {/*        );*/}
+      {/*      })}*/}
+      {/*    </div>*/}
         </Container>
   );
 }

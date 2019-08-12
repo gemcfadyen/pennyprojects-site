@@ -28,17 +28,24 @@ const BoldText = styled.p`
 
 export default () => (
   <Container>
-    <CircularImage src="headshot.jpeg" alt=""/>
+    <CardBase>
+      <CardHeader>
+        <CircularImage src="headshot.jpeg" alt=""/>
 
-    <p>I'm Georgina, a Contract Polyglot Developer. I enjoy working on high performing, collaborative Agile teams where
-      challenges are embraced, modern technologies applied, and software delivered using clean coding techniques and
-      best practices.</p>
-    <MainTitle>Summary of Technologies: </MainTitle> Polyglot Full Stack Developer: Java, JavaScript, React, Ruby,
-    Elixir, PHP, C++, SQL, Gigaspaces, Spring Batch Framework, Spring, Hibernate, Xslt, Maven, Gradle, Git.
+        <p>I'm Georgina, a Contract Polyglot Developer. I enjoy working on high performing, collaborative Agile teams
+          where
+          challenges are embraced, modern technologies applied, and software delivered using clean coding techniques and
+          best practices.</p>
+        <MainTitle>Summary of Technologies: </MainTitle> Polyglot Full Stack Developer: Java, JavaScript, React, Ruby,
+        Elixir, PHP, C++, SQL, Gigaspaces, Spring Batch Framework, Spring, Hibernate, Xslt, Maven, Gradle, Git.
 
-    <p/>
+        <p/>
 
-    <MainTitle>Summary of Methodologies: </MainTitle> Scrum, Kanban, Test Driven Development, Behaviour Driven
-    Development, Specification by Example, Pair-programming.
+        <MainTitle>Summary of Methodologies: </MainTitle> Scrum, Kanban, Test Driven Development, Behaviour Driven
+        Development, Specification by Example, Pair-programming.
+      </CardHeader>
+      <CardContent>
+      </CardContent>
+    </CardBase>
   </Container>
 );

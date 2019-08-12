@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
     padding: 4em;
+    //background-color: lightcyan;
 `;
 
 const StyledFooterDiv= styled.div`
    margin: "1rem auto";
-   maxWidth: 800
+   maxWidth: 800px;
 `;
 
 const ListWithoutBullet = styled.ul`
@@ -15,7 +16,7 @@ const ListWithoutBullet = styled.ul`
 `;
 
 const SizedImage = styled.img`
-  height: 80%;
+  height: 100%;
   width: 40%;
 `;
 
@@ -29,7 +30,7 @@ const StyledListItem = styled.li`
   justify-content: center;
 `;
 
-export default ({ children }) => (
+export default () => (
   <Wrapper>
     <StyledFooterDiv>
       <ListWithoutBullet>
