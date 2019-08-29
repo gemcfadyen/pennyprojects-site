@@ -4,22 +4,9 @@ import styled from "styled-components";
 import CardBase from "../cards/base/base";
 import CardHeader from "../cards/header/header";
 import CardContent from "../cards/content/content";
-
-const ExternalLink = styled.a`
-  padding-right: 5px;
-  text-decoration: none;
-  display: block;
-  height: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const BoldText = styled.h1`
-  font-weight: bold;
-  font-size: 15px;
-`;
+import StyledImage from "./HeaderImage";
+import TitleLayout from "./content/TitleLayout";
+import ConferenceDetails from "./content/conferenceDate";
 
 const StyledDiv = styled.div`
 @media screen and (min-width: 40em) {
@@ -52,69 +39,65 @@ export default () => (
 
       <StyledCardContainer>
         <StyledLink href={"http://www.elixirconf.eu/elixirconf2017/georgina-mcfadyen"}
-           target="_blank">
-        <CardBase interactive={true}>
-          <CardHeader>
-            <BoldText> Microservices Under the Umbrella </BoldText>
-            Elixir EU Workshops
-            Barcelona, May 2017
-          </CardHeader>
-          <CardContent>
-            <div>
-              This workshop was held in Barcelona, Spain as part of Elixir EU in May 2017.
-            </div>
-            <br/>
-
-            <ExternalLink href="http://www.elixirconf.eu/elixirconf2017/georgina-mcfadyen" width="210" height="182">
-              Click here to view the event
-            </ExternalLink>
-
-          </CardContent>
-        </CardBase>
+                    target="_blank">
+          <CardBase interactive={true}>
+            <CardHeader>
+              <StyledImage imageUrl={"workshops/Barcalona.jpeg"}/>
+            </CardHeader>
+            <CardContent>
+              <TitleLayout> Microservices Under the Umbrella </TitleLayout>
+              <ConferenceDetails event={"Elixir EU Workshop"} date={"May 2017"} location={"Barcelona, Spain"}/>
+              <br/>
+              <div>
+                One day workshop taking students through how to deploy different
+                OTP apps using umbrella applications using TDD and Distributed Erlang.
+              </div>
+            </CardContent>
+          </CardBase>
         </StyledLink>
       </StyledCardContainer>
 
 
       <StyledCardContainer>
         <StyledLink href={"https://www.meetup.com/8LU-London/events/237311782/"}
-           target="_blank">
-        <CardBase interactive={true}>
-          <CardHeader>
-            <BoldText> 8LU Legacy Code Retreat </BoldText>
-            8th Light University Meetup
-            London, February 2017
-          </CardHeader>
-          <CardContent>
-            <div>
-              This workshop was held in Barcelona, Spain as part of Elixir EU in May 2017.
-            </div>
-            <br/>
-
-            <ExternalLink href="https://www.meetup.com/8LU-London/events/237311782/" width="210" height="182">
-              Click here to view the event
-            </ExternalLink>
-          </CardContent>
-        </CardBase>
+                    target="_blank">
+          <CardBase interactive={true}>
+            <CardHeader>
+              <StyledImage imageUrl={"workshops/Barcalona.jpeg"}/>
+            </CardHeader>
+            <CardContent>
+              <TitleLayout> 8LU Legacy Code Retreat </TitleLayout>
+              <ConferenceDetails event={"8LU Meetup"} date={"February 2017"} location={"London, UK"}/>
+              <br/>
+              <div>
+                One day workshop taking students through different refactoring techniques on a legacy code base.
+              </div>
+              <br/>
+            </CardContent>
+          </CardBase>
         </StyledLink>
       </StyledCardContainer>
 
 
       <StyledCardContainer>
         <StyledLink href={"https://www.meetup.com/london-software-craftsmanship/events/235776594"}
-           target="_blank">
-        <CardBase interactive={true}>
-          <CardHeader>
-            <BoldText> Extract Your Own Test Framework </BoldText>
-            London Software Craftsmanship Community (LSCC) Meetup
-            London, December 2016
-          </CardHeader>
-          <CardContent>
-            <div>
-              This workshop was held in Barcelona, Spain as part of Elixir EU in May 2017.
-            </div>
-            <br/>
-          </CardContent>
-        </CardBase>
+                    target="_blank">
+          <CardBase interactive={true}>
+            <CardHeader>
+              <StyledImage imageUrl={"workshops/createYourOwnTestFramework.jpeg"}/>
+            </CardHeader>
+            <CardContent>
+              <TitleLayout> Create Your Own Test Framework </TitleLayout>
+              <ConferenceDetails event={"London Software Craftsmanship Meetup"} date={"December 2016"}
+                                 location={"London, UK"}/>
+              <br/>
+              <div>
+                Practical workshop where students explored the fundamentals of a test framework by extracting their own
+                from the code they were writing..
+              </div>
+              <br/>
+            </CardContent>
+          </CardBase>
         </StyledLink>
       </StyledCardContainer>
 

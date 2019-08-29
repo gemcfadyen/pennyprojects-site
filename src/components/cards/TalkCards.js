@@ -4,14 +4,11 @@ import CardHeader from "./header/header";
 import CardContent from "./content/content";
 
 import styled from "styled-components";
-//todo decide if we want these to be linear or wrapped
-const StyledDiv = styled.div`
-//display:flex;
-//flex-direction: column;
-//align-items: center;
-//justify-content: space-between;
-//margin: auto;
+import StyledImage from "./HeaderImage";
+import TitleLayout from "./content/TitleLayout";
+import ConferenceDetails from "./content/conferenceDate";
 
+const StyledDiv = styled.div`
 @media screen and (min-width: 40em) {
    display: flex;
    flex-wrap: wrap;
@@ -20,8 +17,6 @@ const StyledDiv = styled.div`
 `;
 
 const StyledCardContainer = styled.div`
-//max-width: 500px;
-
 @media screen and (min-width: 40em) {
    flex: 0 1 calc(50% - 1em);
    min-width: 290px;
@@ -35,17 +30,6 @@ const StyledCardContainer = styled.div`
 
 const StyledLink = styled.a`
 text-decoration: none;
-`;
-
-const ExternalLink = styled.a`
-  padding-right: 5px;
-  text-decoration: none;
-  display: block;
-  height: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const VideoWrapper = styled.div`
@@ -64,18 +48,6 @@ const VideoIFrame = styled.iframe`
   scrolling: "no";
 `;
 
-const MultiVideoContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-max-width: 600px;
-`;
-
-const BoldText = styled.h1`
-  font-weight: bold;
-  font-size: 15px;
-`;
-
 class TalkCards extends Component {
   render() {
     return (
@@ -83,43 +55,45 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              SOLID Elixir
+              <StyledImage imageUrl={"talks/gotoCpn2.jpg"}/>
             </CardHeader>
+            <br/>
             <CardContent>
-              <div>
-                Ever wondered how the OO SOLid principles could relate to functional languages?
-                This talk did a Europe tour in 2018 and featured as the closing KeyNote at Code Lite Beam, Milan.
-
-                TODO Put a web page imbedded to the Closing key note at code lite beam
-              </div>
+              <TitleLayout> SOLID Elixir </TitleLayout>
+              <ConferenceDetails event={"GoTo CPH"} date={"October 2018"} location={"Copenhagen"}/>
+              <VideoWrapper>
+                <VideoIFrame
+                  src="https://www.youtube.com/embed/rmftOs2BzgU">
+                </VideoIFrame>
+              </VideoWrapper>
               <br/>
-              <MultiVideoContainer>
-                <div> Elixir EU, Warsaw 2018</div>
-                <VideoWrapper>
-                  <VideoIFrame
-                    src="https://www.youtube.com/embed/eldYot7uxUc">
-                  </VideoIFrame>
-                </VideoWrapper>
+              <ConferenceDetails event={"Elixir EU"} date={"April 2018"} location={"Warsaw, Poland"}/>
+              <VideoWrapper>
+                <VideoIFrame
+                  src="https://www.youtube.com/embed/eldYot7uxUc">
+                </VideoIFrame>
+              </VideoWrapper>
+              <br/>
+              <ConferenceDetails event={"Closing key note at Code Beam Lite"} date={"April 2018"}
+                                 location={"Milan, Italy"}/>
 
-                <div> GoTo Cophenhagen 2018</div>
-                <VideoWrapper>
-                  <VideoIFrame
-                    src="https://www.youtube.com/embed/rmftOs2BzgU">
-                  </VideoIFrame>
-                </VideoWrapper>
-              </MultiVideoContainer>
-
+              <br/>
             </CardContent>
           </CardBase>
         </StyledCardContainer>
 
-        <StyledCardContainer>
+        < StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              Elixir: A Mini Documentary, Elixir EU
-              Warsaw, April 2018
+              <StyledImage imageUrl={"talks/cards.jpeg"}/>
             </CardHeader>
             <CardContent>
+              <TitleLayout>
+                Elixir: A Mini Documentary
+              </TitleLayout>
+              <ConferenceDetails event={"Elixir EU"} date={"April 2018"} location={"Warsaw, Poland"}/>
+
+
               <VideoWrapper>
                 <VideoIFrame width="210" height="182"
                              src="https://www.youtube.com/embed/lxYFOM3UJzo">
@@ -132,20 +106,22 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <StyledLink href={"http://swanseacon.co.uk/archive2017/"}
                       target="_blank">
-          <CardBase interactive={false}>
-            <CardHeader>
-              Don't Diss The Discipline
-              SwanseaCon
-              Wales, September 2017
-            </CardHeader>
-            <CardContent>
-              TODO Summary of Talk
-              <ExternalLink href="http://swanseacon.co.uk/archive2017/" width="210" height="182">
-                Click here to view the event
-              </ExternalLink>
+            <CardBase interactive={true}>
+              <CardHeader>
+                <StyledImage imageUrl={"talks/swansea.jpeg"}/>
+              </CardHeader>
+              <CardContent>
 
-            </CardContent>
-          </CardBase>
+                <TitleLayout> Don't Diss The Discipline</TitleLayout>
+                <ConferenceDetails event={"SwanseaCon"} date={"September 2017"} location={"Swansea, Wales"}/>
+                <br/>
+                <div>
+                  This talk drew upon experiences seen during my journey to becoming a Software Crafter,
+                  I summarised some common traits observed in those developers who made a huge impact on my career,
+                  and how I built up my own offering such that I now call myself a Software Crafter.
+                </div>
+              </CardContent>
+            </CardBase>
           </StyledLink>
         </StyledCardContainer>
 
@@ -153,14 +129,11 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              Under The Elixir Umbrella
-              Elixir London Conference
-              London, August 2017
+              <StyledImage imageUrl={"talks/ElixirLdnUmbrellaTalk.jpeg"}/>
             </CardHeader>
             <CardContent>
-
-              This talk took place as part of the Elixir LDN conference in August 2017.
-
+              <TitleLayout>Under The Elixir Umbrella </TitleLayout>
+              <ConferenceDetails event={"Elixir Ldn"} date={"August 2017"} location={"London, UK"}/>
               <VideoWrapper>
                 <VideoIFrame width="210" height="182"
                              src="https://www.youtube.com/embed/jhZwQ1LTdUI">
@@ -173,43 +146,39 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <StyledLink href={"https://www.meetup.com/Ladies-of-Code-UK/events/236922126/"}
                       target="_blank">
-          <CardBase interactive={true}>
-            <CardHeader>
-              <BoldText>Introduction to Elixir</BoldText>
-              Ladies of Code Meetup
-              London, April 2017
-            </CardHeader>
-            <CardContent>
-
-              This introduction to Elixir Umbrellas was given at the Ladies of Code meetup in London, April 2017.
-              /** todo need to put in a web frame to show website **/
-              <ExternalLink href="https://www.meetup.com/Ladies-of-Code-UK/events/236922126/" width="210" height="182">
-                Click here to view the event
-              </ExternalLink>
-            </CardContent>
-          </CardBase>
+            <CardBase interactive={true}>
+              <CardHeader>
+                <StyledImage imageUrl={"talks/LoCUmbrella.jpeg"}/>
+              </CardHeader>
+              <CardContent>
+                <TitleLayout>Introduction to Elixir </TitleLayout>
+                <ConferenceDetails event={"Ladies of Code Meetup"} date={"April 2017"} location={"London, UK"}/>
+                <br/>
+                <div>
+                  This talk went through basic examples and live code demos of some Elixir features.
+                </div>
+              </CardContent>
+            </CardBase>
           </StyledLink>
         </StyledCardContainer>
 
         <StyledCardContainer>
           <StyledLink href={"https://www.meetup.com/Ladies-of-Code-UK/events/232609419/"}
                       target="_blank">
-          <CardBase interactive={true}>
-            <CardHeader>
-              <BoldText> TDD From the inside out or the outside in</BoldText>
-              Ladies of Code Meetup
-              London, August 2016
-            </CardHeader>
-            <CardContent>
+            <CardBase interactive={true}>
+              <CardHeader>
+                <StyledImage imageUrl={"talks/TDD2Talk.jpeg"}/>
+              </CardHeader>
+              <CardContent>
+                <TitleLayout>TDD From the Inside Out or the Outside In? </TitleLayout>
+                <ConferenceDetails event={"Ladies of Code Meetup"} date={"August 2016"} location={"London, UK"}/>
 
-              This talk discussed two approches of TDD. It was given as part of the Ladies of Code meetup group in
-              London, August 2016.
-              /** todo need to put in a web frame to show website **/
-              <ExternalLink href="https://www.meetup.com/Ladies-of-Code-UK/events/232609419/" width="210" height="182">
-                Click here to view the event
-              </ExternalLink>
-            </CardContent>
-          </CardBase>
+                <br/>
+                <div>
+                  This talk compared two different styles of TDD: inside out and outside in.
+                </div>
+              </CardContent>
+            </CardBase>
           </StyledLink>
         </StyledCardContainer>
 
@@ -217,47 +186,22 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <StyledLink href={"https://getstarted.ticketmaster.co.uk/news/london-technology-week-wrap"}
                       target="_blank">
-          <CardBase interactive={true}>
-            <CardHeader>
-              <BoldText> Diversity in Technology</BoldText>
-              London Technology Week
-              London, July 2016
-            </CardHeader>
-            <CardContent>
-
-              As part of London Technology week, a presentation was given on the current diversity issues that the
-              software industry faces, July 2016.
-              /** todo need to put in a web frame to show website **/
-              <ExternalLink href="https://getstarted.ticketmaster.co.uk/news/london-technology-week-wrap" width="210"
-                            height="182">
-                Click here to read about it
-              </ExternalLink>
-            </CardContent>
-          </CardBase>
+            <CardBase interactive={true}>
+              <CardHeader>
+                <StyledImage imageUrl={"talks/DiversityTalk.jpeg"}/>
+              </CardHeader>
+              <CardContent>
+                <TitleLayout>Diversity in Technology</TitleLayout>
+                <ConferenceDetails event={"London Technology Week"} date={"July 2016"} location={"London, UK"} />
+                <br/>
+                <div>
+                  This talk shared 8th Light’s journey to creating a gender diverse workplace.
+                </div>
+              </CardContent>
+            </CardBase>
           </StyledLink>
         </StyledCardContainer>
 
-        <StyledCardContainer>
-          <StyledLink href={"https://getstarted.ticketmaster.co.uk/news/london-technology-week-wrap"}
-                      target="_blank">
-          <CardBase interactive={true}>
-            <CardHeader>
-              <BoldText>Introduction to Elixir</BoldText>
-              Ladies of Code Meetup
-              London, April 2016
-            </CardHeader>
-            <CardContent>
-
-              As part of London Technology week, a presentation was given on the current diversity issues that the
-              software industry faces, July 2016.
-              /** todo need to put in a web frame to show website **/
-              <ExternalLink href="https://www.meetup.com/Ladies-of-Code-UK/events/236922126/" width="210" height="182">
-                Click here to view the event
-              </ExternalLink>
-            </CardContent>
-          </CardBase>
-          </StyledLink>
-        </StyledCardContainer>
       </StyledDiv>
     );
   }

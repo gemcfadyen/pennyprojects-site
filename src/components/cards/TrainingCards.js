@@ -4,17 +4,7 @@ import styled from "styled-components";
 import CardBase from "../cards/base/base";
 import CardHeader from "../cards/header/header";
 import CardContent from "../cards/content/content";
-
-const ExternalLink = styled.a`
-  padding-right: 5px;
-  text-decoration: none;
-  display: block;
-  height: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import StyledImage from "../cards/HeaderImage";
 
 const BoldText = styled.h1`
   font-weight: bold;
@@ -84,18 +74,17 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <BoldText> Skills for the Agile Developer</BoldText>
-            London,
-            New York, USA
-            Nashville, USA
+            <StyledImage imageUrl={"training/AgileTraining.jpeg"}/>
           </CardHeader>
           <CardContent>
             <div>
               3 day training course...
+              <BoldText> Skills for the Agile Developer</BoldText>
+              London,
+              New York, USA
+              Nashville, USA
             </div>
             <br/>
-
-
           </CardContent>
         </CardBase>
       </StyledCardContainer>

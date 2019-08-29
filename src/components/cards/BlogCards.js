@@ -3,13 +3,9 @@ import Container from "../container";
 import styled from "styled-components";
 import CardBase from "../cards/base/base";
 import CardHeader from "../cards/header/header";
+import StyledImage from "../cards/HeaderImage";
 import CardContent from "../cards/content/content";
-import Cards from "./Cards";
-
-const BoldText = styled.h1`
-  font-weight: bold;
-  font-size: 15px;
-`;
+import TitleContent from "./content/TitleLayout";
 
 const StyledDiv = styled.div`
 @media screen and (min-width: 40em) {
@@ -20,10 +16,10 @@ const StyledDiv = styled.div`
 `;
 
 const StyledCardContainer = styled.div`
+    padding-bottom: 1rem;
 @media screen and (min-width: 40em) {
    flex: 0 1 calc(50% - 1em);
    min-width: 290px;
-   padding-bottom: 1em;
    }
    
    @media screen and (min-width: 60em) {
@@ -35,39 +31,63 @@ const StyledLink = styled.a`
 text-decoration: none;
 `;
 
+const Layout = styled.div`
+ padding: 8px;
+`;
+
+const TitleLayout = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+`;
+
+const HeaderRow = styled.div`
+display: flex;
+flex-direction: row;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+`;
+
+
 export default () => (
 
   <Container>
     <StyledDiv>
+
       <StyledCardContainer>
         <StyledLink href={"https://8thlight.com/blog/georgina-mcfadyen/2017/05/01/elixir-umbrella-projects.html"}
-           target="_blank">
+                    target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <BoldText> Using an Elixir Umbrella </BoldText>
+              <StyledImage imageUrl={"blogs/umbrella.jpeg"}>
+
+              </StyledImage>
             </CardHeader>
             <CardContent>
-              <div>
-                Intro/excerpt
-              </div>
-              <br/>
+              <TitleContent>
+                Using an Elixir Umbrella
+              </TitleContent>
             </CardContent>
           </CardBase>
         </StyledLink>
       </StyledCardContainer>
 
       <StyledCardContainer>
-        <StyledLink href={"https://8thlight.com/blog/georgina-mcfadyen/2017/03/27/working-efficiently-with-offshore-teams.html"}
-           target="_blank">
+        <StyledLink
+          href={"https://8thlight.com/blog/georgina-mcfadyen/2017/03/27/working-efficiently-with-offshore-teams.html"}
+          target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <BoldText> Working Effectively with Offshore Teams </BoldText>
+              <StyledImage imageUrl="blogs/overseas.jpg">
+              </StyledImage>
             </CardHeader>
             <CardContent>
-              <div>
-                Intro/excerpt
-              </div>
-              <br/>
+              <TitleContent>Working Effectively with Offshore Teams </TitleContent>
             </CardContent>
           </CardBase>
         </StyledLink>
@@ -75,33 +95,30 @@ export default () => (
 
       <StyledCardContainer>
         <StyledLink href={"https://8thlight.com/blog/georgina-mcfadyen/2017/01/19/common-code-smells.html"}
-           target="_blank">
+                    target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <BoldText> Common Code Smells </BoldText>
+              <StyledImage imageUrl={"blogs/flowers.jpg"} />
             </CardHeader>
             <CardContent>
-              <div>
-                Intro/excerpt
-              </div>
-              <br/>
+              <TitleContent> Common Code Smells </TitleContent>
             </CardContent>
           </CardBase>
         </StyledLink>
       </StyledCardContainer>
 
       <StyledCardContainer>
-        <StyledLink href={"https://8thlight.com/blog/georgina-mcfadyen/2016/09/28/good-craftsman-never-blames-his-tools.html"}
-           target="_blank">
+        <StyledLink
+          href={"https://8thlight.com/blog/georgina-mcfadyen/2016/09/28/good-craftsman-never-blames-his-tools.html"}
+          target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <BoldText> A Good Craftsman Never Blames His Tools </BoldText>
+              <StyledImage imageUrl={"blogs/woodwork.jpg"}>
+              </StyledImage>
+
             </CardHeader>
             <CardContent>
-              <div>
-                Intro/excerpt
-              </div>
-              <br/>
+              <TitleContent> A Good Craftsman Never Blames His Tools</TitleContent>
             </CardContent>
           </CardBase>
         </StyledLink>
@@ -110,16 +127,13 @@ export default () => (
 
       <StyledCardContainer>
         <StyledLink href={"https://8thlight.com/blog/georgina-mcfadyen/2016/06/27/inside-out-tdd-vs-outside-in.html"}
-           target="_blank">
+                    target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <BoldText> TDD - From the Inside Out or the Outside In</BoldText>
+              <StyledImage imageUrl={"blogs/doors.jpg"}/>
             </CardHeader>
             <CardContent>
-              <div>
-                Intro/excerpt
-              </div>
-              <br/>
+              <TitleContent> TDD - From the Inside Out or the Outside In? </TitleContent>
             </CardContent>
           </CardBase>
         </StyledLink>
@@ -128,22 +142,18 @@ export default () => (
 
       <StyledCardContainer>
         <StyledLink href={"http://gemcfadyen.github.io/georginam.com/"}
-           target="_blank">
+                    target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <BoldText>Apprenticeship Blog</BoldText>
+              <StyledImage imageUrl={"blogs/books.jpg"}>
+              </StyledImage>
             </CardHeader>
             <CardContent>
-              <div>
-                Intro/excerpt
-              </div>
-              <br/>
+              <TitleContent>Apprenticeship Blog</TitleContent>
             </CardContent>
           </CardBase>
         </StyledLink>
       </StyledCardContainer>
-
-
     </StyledDiv>
   </Container>
 );

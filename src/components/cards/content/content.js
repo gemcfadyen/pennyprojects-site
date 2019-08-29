@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledContent = styled.div`
-    paddingTop: 8;
-    paddingBottom: 8;
-    paddingLeft: 12;
-    paddingRight: 12;
+    padding: 8px 12px;
+    background-color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    ;
 `;
 
 const CardContent = ({children}) => (

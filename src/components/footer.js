@@ -3,11 +3,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
     padding: 4em;
-    //background-color: lightcyan;
 `;
 
 const StyledFooterDiv= styled.div`
-   margin: "1rem auto";
+   margin: 1rem auto;
    maxWidth: 800px;
 `;
 

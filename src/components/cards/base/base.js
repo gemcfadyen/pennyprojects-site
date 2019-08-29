@@ -10,10 +10,8 @@ export default class CardBase extends React.Component {
   render() {
     const baseStyle = {
       height: "100%",
-      padding: "8px",
       borderRadius: 12,
       backgroundColor: "white",
-      marginBottom: 16,
       boxShadow: "0px 1.5px 1.5px -1px black"
     };
 

@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
-    borderTopLeftRadius: 12;
-    borderTopRightRadius: 12;
-    overflow: hidden;
+    margin-bottom: 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 `;
 
 const CardHeader = ({children}) => (

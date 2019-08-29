@@ -25,11 +25,14 @@ const BoldText = styled.p`
   padding-right: 5px;
   display: inline;
 `;
-
+const Layout = styled.div`
+ padding: 8px;
+`;
 export default () => (
   <Container>
     <CardBase>
       <CardHeader>
+        <Layout>
         <CircularImage src="headshot.jpeg" alt=""/>
 
         <p>I'm Georgina, a Contract Polyglot Developer. I enjoy working on high performing, collaborative Agile teams
@@ -43,6 +46,7 @@ export default () => (
 
         <MainTitle>Summary of Methodologies: </MainTitle> Scrum, Kanban, Test Driven Development, Behaviour Driven
         Development, Specification by Example, Pair-programming.
+        </Layout>
       </CardHeader>
       <CardContent>
       </CardContent>
