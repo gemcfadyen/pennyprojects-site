@@ -5,6 +5,8 @@ import CardBase from "../cards/base/base";
 import CardHeader from "../cards/header/header";
 import CardContent from "../cards/content/content";
 import StyledImage from "../cards/HeaderImage";
+import ConferenceDetails from "./content/conferenceDate";
+import TitleLayout from "./content/TitleLayout";
 
 const BoldText = styled.h1`
   font-weight: bold;
@@ -39,12 +41,15 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <BoldText> Java 8 </BoldText>
-            Northampton, May 2016
+            <StyledImage imageUrl={"training/java.jpg"}/>
           </CardHeader>
           <CardContent>
+            <TitleLayout>Java 8 Training</TitleLayout>
+            <br/>
+            <ConferenceDetails date={"August 2016"} event={"Client Training"} location={"Northampton, UK"}/>
+            <br/>
             <div>
-              3 day training course...
+              3 day in house training course teaching students how to use Java 8 features, SOLID principles and TDD.
             </div>
             <br/>
 
@@ -57,12 +62,16 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <BoldText> Beginner Elixir </BoldText>
-            London, May 2016
+            <StyledImage imageUrl={"training/elixir.jpg"}/>
           </CardHeader>
           <CardContent>
+            <TitleLayout>Elixir for Beginners</TitleLayout>
+            <br/>
+            <ConferenceDetails date={"May 2016"} event={"Client Training"} location={"London, UK"}/>
+          <br/>
             <div>
-              3 day training course...
+              3 day in house training course introducing students to the key feature of Elixir and functional
+              programming using TDD.
             </div>
             <br/>
 
@@ -77,12 +86,18 @@ export default () => (
             <StyledImage imageUrl={"training/AgileTraining.jpeg"}/>
           </CardHeader>
           <CardContent>
+            <TitleLayout> Skills for the Agile Developer</TitleLayout>
             <div>
-              3 day training course...
-              <BoldText> Skills for the Agile Developer</BoldText>
-              London,
-              New York, USA
-              Nashville, USA
+              <ConferenceDetails date={"May 2015"} event={"Client Training"} location={"London, UK"}/>
+              <br/>
+
+              <ConferenceDetails date={"June 2015"} event={"Client Training"} location={"New York, USA"}/>
+              <br/>
+
+              <ConferenceDetails date={"June 2015"} event={"Client Training"} location={"Nashville, USA"}/>
+              <br/>
+              2 day in house training course introducing developers to Agile programming techniques such as pair
+              programming, TDD, continuous delivery, & SOLID design principles.
             </div>
             <br/>
           </CardContent>

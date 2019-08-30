@@ -63,7 +63,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"workshops/Barcalona.jpeg"}/>
+              <StyledImage imageUrl={"workshops/code.jpg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout> 8LU Legacy Code Retreat </TitleLayout>
@@ -93,7 +93,7 @@ export default () => (
               <br/>
               <div>
                 Practical workshop where students explored the fundamentals of a test framework by extracting their own
-                from the code they were writing..
+                from the code they were writing.
               </div>
               <br/>
             </CardContent>
