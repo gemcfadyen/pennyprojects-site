@@ -28,7 +28,7 @@ const StyledCardContainer = styled.div`
 `;
 
 const StyledLink = styled.a`
-text-decoration: none;
+  color: black;
 `;
 
 const Layout = styled.div`
@@ -98,7 +98,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"blogs/flowers.jpg"} />
+              <StyledImage imageUrl={"blogs/flowers.jpg"}/>
             </CardHeader>
             <CardContent>
               <TitleContent> Common Code Smells </TitleContent>

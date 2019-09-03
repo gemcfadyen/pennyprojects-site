@@ -28,6 +28,11 @@ const StyledHeader = styled.header`
 const StyledLink = styled(Link)`
   textShadow: none;
   backgroundImage: none;
+  color: midnightblue;
+  font-weight: bold;
+
+   &:hover {
+    color: white;
 `;
 
 const InlineHeader = styled.h3`
@@ -41,21 +46,22 @@ const StyledListElement = styled.li`
 
 const ListLink = props =>
   <StyledListElement>
-    <Link to={props.to}>
+    <StyledLink to={props.to} activeStyle={{color: "blueviolet"}}>
       {props.children}
-    </Link>
+    </StyledLink>
   </StyledListElement>
+
 
 // todo should the header/footer be a different colour or in line with the rest of the content? (ie put the header back insdide the gutter tags
 export default ({children}) =>
   <PageStyleForWholeSite>
     <Gutter>
       <StyledHeader>
-        <StyledLink to="/">
+        <StyledLink to="/" activeStyle={{color: "midnightblue"}}>
           <InlineHeader>Penny Projects Ltd</InlineHeader>
         </StyledLink>
         <StyledList>
-          <ListLink to="/">Home</ListLink>
+          {/*<ListLink to="/">Home</ListLink>*/}
           <ListLink to="/blog">Blog</ListLink>
           <ListLink to="/talks">Talks</ListLink>
           <ListLink to="/training">Training</ListLink>

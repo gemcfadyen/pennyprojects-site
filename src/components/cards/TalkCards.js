@@ -7,6 +7,7 @@ import styled from "styled-components";
 import StyledImage from "./HeaderImage";
 import TitleLayout from "./content/TitleLayout";
 import ConferenceDetails from "./content/conferenceDate";
+import StyledCardContainer from "./StyledContainer";
 
 const StyledDiv = styled.div`
 @media screen and (min-width: 40em) {
@@ -16,20 +17,10 @@ const StyledDiv = styled.div`
    }
 `;
 
-const StyledCardContainer = styled.div`
-@media screen and (min-width: 40em) {
-   flex: 0 1 calc(50% - 1em);
-   min-width: 290px;
-   padding-bottom: 1em;
-   }
-   
-   @media screen and (min-width: 60em) {
-     flex: 0 1 calc(25% - 1em);
-}
-`;
-
 const StyledLink = styled.a`
 text-decoration: none;
+color: black;
+
 `;
 
 const VideoWrapper = styled.div`
@@ -55,7 +46,7 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"talks/gotoCpn2.jpg"}/>
+              <StyledImage imageUrl={"talks/gotoCpnSmall.jpg"}/>
             </CardHeader>
             <br/>
             <CardContent>

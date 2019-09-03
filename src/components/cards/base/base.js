@@ -25,7 +25,7 @@ export default class CardBase extends React.Component {
       }
       : {};
 
-    const combinedStyles = {...baseStyle, ...extraStyle}
+    const combinedStyles = {...baseStyle, ...extraStyle};
 
 
     return (<div onMouseEnter={() => {

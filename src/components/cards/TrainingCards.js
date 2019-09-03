@@ -7,11 +7,7 @@ import CardContent from "../cards/content/content";
 import StyledImage from "../cards/HeaderImage";
 import ConferenceDetails from "./content/conferenceDate";
 import TitleLayout from "./content/TitleLayout";
-
-const BoldText = styled.h1`
-  font-weight: bold;
-  font-size: 15px;
-`;
+import StyledCardContainer from "./StyledContainer";
 
 const StyledDiv = styled.div`
 @media screen and (min-width: 40em) {
@@ -19,19 +15,6 @@ const StyledDiv = styled.div`
    flex-wrap: wrap;
    justify-content: space-between;
    }
-`;
-
-const StyledCardContainer = styled.div`
-
-@media screen and (min-width: 40em) {
-   flex: 0 1 calc(50% - 1em);
-   min-width: 290px;
-   padding-bottom: 1em;
-   }
-   
-   @media screen and (min-width: 60em) {
-     flex: 0 1 calc(25% - 1em);
-}
 `;
 
 export default () => (
@@ -52,8 +35,6 @@ export default () => (
               3 day in house training course teaching students how to use Java 8 features, SOLID principles and TDD.
             </div>
             <br/>
-
-
           </CardContent>
         </CardBase>
       </StyledCardContainer>
@@ -74,8 +55,6 @@ export default () => (
               programming using TDD.
             </div>
             <br/>
-
-
           </CardContent>
         </CardBase>
       </StyledCardContainer>
@@ -83,7 +62,7 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <StyledImage imageUrl={"training/AgileTraining.jpeg"}/>
+            <StyledImage imageUrl={"training/agile.jpg"}/>
           </CardHeader>
           <CardContent>
             <TitleLayout> Skills for the Agile Developer</TitleLayout>
@@ -103,7 +82,6 @@ export default () => (
           </CardContent>
         </CardBase>
       </StyledCardContainer>
-
     </StyledDiv>
   </Container>
 );

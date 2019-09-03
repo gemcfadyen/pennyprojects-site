@@ -2,17 +2,14 @@ import React from "react";
 import Container from "../components/container";
 import WorkshopCards from "../components/cards/WorkshopCards";
 import TrainingCards from "../components/cards/TrainingCards";
+import TitleLayout from "../components/cards/content/TitleLayout";
 
 export default () => (
   <Container>
-    <p>
-      Workshops
-    </p>
+    <TitleLayout>Workshops </TitleLayout>
     <WorkshopCards/>
 
-    <p>
-      Training
-    </p>
+    <TitleLayout>Training</TitleLayout>
     <TrainingCards/>
   </Container>
 );
