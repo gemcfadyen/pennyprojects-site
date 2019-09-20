@@ -19,12 +19,7 @@ const MainTitle = styled.p`
   font-size: 20px;
 `;
 
-const BoldText = styled.p`
-  font-weight: bold;
-  font-size: 15px;
-  padding-right: 5px;
-  display: inline;
-`;
+
 const Layout = styled.div`
  padding: 8px;
 `;

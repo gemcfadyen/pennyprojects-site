@@ -156,7 +156,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"talks/TDD2Talk.jpeg"}/>
+                <StyledImage imageUrl={"TDD2Talk.jpeg"}/>
               </CardHeader>
               <CardContent>
                 <TitleLayout>TDD From the Inside Out or the Outside In? </TitleLayout>
@@ -176,7 +176,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"talks/DiversityTalk.jpeg"}/>
+                <StyledImage imageUrl={"DiversityTalk.jpeg"}/>
               </CardHeader>
               <CardContent>
                 <TitleLayout>Diversity in Technology</TitleLayout>
