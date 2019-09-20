@@ -6,7 +6,6 @@ export default class CardBase extends React.Component {
     this.state = {hover: false};
   }
 
-
   render() {
     const baseStyle = {
       height: "100%",
@@ -40,5 +39,3 @@ export default class CardBase extends React.Component {
     > {this.props.children} </div>)
   }
 }
-
-

@@ -14,5 +14,4 @@ const ConferenceDetails = ({event, location, date}) =>
     </div>
   );
 
-
 export default ConferenceDetails;

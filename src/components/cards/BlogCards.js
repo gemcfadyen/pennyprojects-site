@@ -31,31 +31,7 @@ const StyledLink = styled.a`
   color: black;
 `;
 
-const Layout = styled.div`
- padding: 8px;
-`;
-
-const TitleLayout = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  vertical-align: middle;
-  font-weight: bold;
-  text-align: center;
-`;
-
-const HeaderRow = styled.div`
-display: flex;
-flex-direction: row;
-border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-`;
-
-
 export default () => (
-
   <Container>
     <StyledDiv>
 
@@ -124,7 +100,6 @@ export default () => (
         </StyledLink>
       </StyledCardContainer>
 
-
       <StyledCardContainer>
         <StyledLink href={"https://8thlight.com/blog/georgina-mcfadyen/2016/06/27/inside-out-tdd-vs-outside-in.html"}
                     target="_blank">
@@ -138,7 +113,6 @@ export default () => (
           </CardBase>
         </StyledLink>
       </StyledCardContainer>
-
 
       <StyledCardContainer>
         <StyledLink href={"http://gemcfadyen.github.io/georginam.com/"}

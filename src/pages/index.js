@@ -39,7 +39,7 @@ export default () => (
           where
           challenges are embraced, modern technologies applied, and software delivered using clean coding techniques and
           best practices.</p>
-        <MainTitle>Summary of Technologies: </MainTitle> Polyglot Full Stack Developer: Java, JavaScript, React, Ruby,
+        <MainTitle>Summary of Technologies: </MainTitle> Polyglot Full Stack Developer: Java, JavaScript, React, React-Native, Ruby,
         Elixir, PHP, C++, SQL, Gigaspaces, Spring Batch Framework, Spring, Hibernate, Xslt, Maven, Gradle, Git.
 
         <p/>

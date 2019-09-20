@@ -24,7 +24,6 @@ const StyledLink = styled.a`
 export default () => (
   <Container>
     <StyledDiv>
-
       <StyledCardContainer>
         <StyledLink href={"http://www.elixirconf.eu/elixirconf2017/georgina-mcfadyen"}
                     target="_blank">
@@ -45,7 +44,6 @@ export default () => (
         </StyledLink>
       </StyledCardContainer>
 
-
       <StyledCardContainer>
         <StyledLink href={"https://www.meetup.com/8LU-London/events/237311782/"}
                     target="_blank">
@@ -65,7 +63,6 @@ export default () => (
           </CardBase>
         </StyledLink>
       </StyledCardContainer>
-
 
       <StyledCardContainer>
         <StyledLink href={"https://www.meetup.com/london-software-craftsmanship/events/235776594"}
@@ -88,7 +85,6 @@ export default () => (
           </CardBase>
         </StyledLink>
       </StyledCardContainer>
-
     </StyledDiv>
   </Container>
 );

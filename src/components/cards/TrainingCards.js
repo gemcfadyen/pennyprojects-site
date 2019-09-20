@@ -19,7 +19,6 @@ const StyledDiv = styled.div`
 
 export default () => (
   <Container>
-
     <StyledDiv>
       <StyledCardContainer>
         <CardBase interactive={false}>
@@ -38,7 +37,6 @@ export default () => (
           </CardContent>
         </CardBase>
       </StyledCardContainer>
-
 
       <StyledCardContainer>
         <CardBase interactive={false}>

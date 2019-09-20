@@ -84,7 +84,6 @@ class TalkCards extends Component {
               </TitleLayout>
               <ConferenceDetails event={"Elixir EU"} date={"April 2018"} location={"Warsaw, Poland"}/>
 
-
               <VideoWrapper>
                 <VideoIFrame width="210" height="182"
                              src="https://www.youtube.com/embed/lxYFOM3UJzo">
@@ -115,7 +114,6 @@ class TalkCards extends Component {
             </CardBase>
           </StyledLink>
         </StyledCardContainer>
-
 
         <StyledCardContainer>
           <CardBase interactive={false}>
@@ -173,7 +171,6 @@ class TalkCards extends Component {
           </StyledLink>
         </StyledCardContainer>
 
-
         <StyledCardContainer>
           <StyledLink href={"https://getstarted.ticketmaster.co.uk/news/london-technology-week-wrap"}
                       target="_blank">
@@ -192,7 +189,6 @@ class TalkCards extends Component {
             </CardBase>
           </StyledLink>
         </StyledCardContainer>
-
       </StyledDiv>
     );
   }

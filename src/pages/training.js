@@ -13,4 +13,3 @@ export default () => (
     <TrainingCards/>
   </Container>
 );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

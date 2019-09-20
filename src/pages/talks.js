@@ -7,7 +7,7 @@ export default () => (
   <Container>
     <TitleLayout>
       Over the last few years I have made several public appearances in the form of talks and workshops. Here are
-      details on sessions I've held in the Software Community all over Europe.
+      details on talks I've done in the Software Community all over Europe.
     </TitleLayout>
     <p/>
     <TalkCards/>

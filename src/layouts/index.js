@@ -52,7 +52,6 @@ const ListLink = props =>
   </StyledListElement>
 
 
-// todo should the header/footer be a different colour or in line with the rest of the content? (ie put the header back insdide the gutter tags
 export default ({children}) =>
   <PageStyleForWholeSite>
     <Gutter>
@@ -61,7 +60,6 @@ export default ({children}) =>
           <InlineHeader>Penny Projects Ltd</InlineHeader>
         </StyledLink>
         <StyledList>
-          {/*<ListLink to="/">Home</ListLink>*/}
           <ListLink to="/blog">Blog</ListLink>
           <ListLink to="/talks">Talks</ListLink>
           <ListLink to="/training">Training</ListLink>
@@ -74,28 +72,3 @@ export default ({children}) =>
       <Footer/>
     </Gutter>
   </PageStyleForWholeSite>
-
-
-// export default ({children}) =>
-//   <PageStyleForWholeSite>
-//     <div style={{background: "lightcyan", height: "100%", padding: "2rem"}}>
-//       <StyledHeader>
-//         <StyledLink to="/">
-//           <InlineHeader>Penny Projects Ltd</InlineHeader>
-//         </StyledLink>
-//         <StyledList>
-//           <ListLink to="/">Home</ListLink>
-//           <ListLink to="/blog">Blog</ListLink>
-//           <ListLink to="/talks">Talks</ListLink>
-//           <ListLink to="/training">Training</ListLink>
-//         </StyledList>
-//       </StyledHeader>
-//     </div>
-//     <Gutter>
-//       <CardWrapper>
-//         {children()}
-//       </CardWrapper>
-//
-//     </Gutter>
-//     <Footer/>
-//   </PageStyleForWholeSite>

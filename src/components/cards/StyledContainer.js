@@ -17,5 +17,4 @@ padding-bottom: 1rem;
 const StyledCardContainer = ({children}) =>
   (<StyledContainer> {children} </StyledContainer>);
 
-
 export default StyledCardContainer;
