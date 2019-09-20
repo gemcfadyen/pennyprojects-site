@@ -46,7 +46,7 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"talks/gotoCpnSmall.jpg"}/>
+              <StyledImage imageUrl={"gotoCpnSmall.jpg"}/>
             </CardHeader>
             <br/>
             <CardContent>
@@ -76,7 +76,7 @@ class TalkCards extends Component {
         < StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"talks/cards.jpeg"}/>
+              <StyledImage imageUrl={"cards.jpeg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout>
@@ -98,7 +98,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"talks/swansea.jpeg"}/>
+                <StyledImage imageUrl={"swansea.jpeg"}/>
               </CardHeader>
               <CardContent>
 
@@ -118,7 +118,7 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"talks/ElixirLdnUmbrellaTalk.jpeg"}/>
+              <StyledImage imageUrl={"ElixirLdnUmbrellaTalk.jpeg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout>Under The Elixir Umbrella </TitleLayout>
@@ -137,7 +137,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"talks/LoCUmbrella.jpeg"}/>
+                <StyledImage imageUrl={"LoCUmbrella.jpeg"}/>
               </CardHeader>
               <CardContent>
                 <TitleLayout>Introduction to Elixir </TitleLayout>

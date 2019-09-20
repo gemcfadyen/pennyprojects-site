@@ -40,7 +40,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"blogs/umbrella.jpeg"}>
+              <StyledImage imageUrl={"umbrella.jpeg"}>
 
               </StyledImage>
             </CardHeader>
@@ -59,7 +59,7 @@ export default () => (
           target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl="blogs/overseas.jpg">
+              <StyledImage imageUrl="overseas.jpg">
               </StyledImage>
             </CardHeader>
             <CardContent>
@@ -74,7 +74,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"blogs/flowers.jpg"}/>
+              <StyledImage imageUrl={"flowers.jpg"}/>
             </CardHeader>
             <CardContent>
               <TitleContent> Common Code Smells </TitleContent>
@@ -89,7 +89,7 @@ export default () => (
           target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"blogs/woodwork.jpg"}>
+              <StyledImage imageUrl={"woodwork.jpg"}>
               </StyledImage>
 
             </CardHeader>
@@ -105,7 +105,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"blogs/doors.jpg"}/>
+              <StyledImage imageUrl={"doors.jpg"}/>
             </CardHeader>
             <CardContent>
               <TitleContent> TDD - From the Inside Out or the Outside In? </TitleContent>
@@ -119,7 +119,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"blogs/books.jpg"}>
+              <StyledImage imageUrl={"books.jpg"}>
               </StyledImage>
             </CardHeader>
             <CardContent>
