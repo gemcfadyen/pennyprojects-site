@@ -75,7 +75,7 @@ class TalkCards extends Component {
         < StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"cards.jpeg"}/>
+              <StyledImage imageUrl={"talks/cards.jpeg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout>
@@ -97,7 +97,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"swansea.jpeg"}/>
+                <StyledImage imageUrl={"talks/swansea.jpeg"}/>
               </CardHeader>
               <CardContent>
 
@@ -117,7 +117,7 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"ElixirLdnUmbrellaTalk.jpeg"}/>
+              <StyledImage imageUrl={"talks/ElixirLdnUmbrellaTalk.jpeg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout>Under The Elixir Umbrella </TitleLayout>
@@ -136,7 +136,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"LoCUmbrella.jpeg"}/>
+                <StyledImage imageUrl={"talks/LoCUmbrella.jpeg"}/>
               </CardHeader>
               <CardContent>
                 <TitleLayout>Introduction to Elixir </TitleLayout>
@@ -155,7 +155,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"TDD2Talk.jpeg"}/>
+                <StyledImage imageUrl={"talks/TDD2Talk.jpeg"}/>
               </CardHeader>
               <CardContent>
                 <TitleLayout>TDD From the Inside Out or the Outside In? </TitleLayout>
@@ -175,7 +175,7 @@ class TalkCards extends Component {
                       target="_blank">
             <CardBase interactive={true}>
               <CardHeader>
-                <StyledImage imageUrl={"DiversityTalk.jpeg"}/>
+                <StyledImage imageUrl={"talks/DiversityTalk.jpeg"}/>
               </CardHeader>
               <CardContent>
                 <TitleLayout>Diversity in Technology</TitleLayout>
