@@ -45,7 +45,7 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"/gotoCpnSmall.jpg"}/>
+              <StyledImage imageUrl={"gotoCpnSmall.jpg"}/>
             </CardHeader>
             <br/>
             <CardContent>
