@@ -29,7 +29,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"Barcalona.jpeg"}/>
+              <StyledImage imageUrl={"workshops/Barcalona.jpeg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout> Microservices Under the Umbrella </TitleLayout>
@@ -49,7 +49,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"code.jpg"}/>
+              <StyledImage imageUrl={"workshops/code.jpg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout> 8LU Legacy Code Retreat </TitleLayout>
@@ -69,7 +69,7 @@ export default () => (
                     target="_blank">
           <CardBase interactive={true}>
             <CardHeader>
-              <StyledImage imageUrl={"createYourOwnTestFramework.jpeg"}/>
+              <StyledImage imageUrl={"workshops/createYourOwnTestFramework.jpeg"}/>
             </CardHeader>
             <CardContent>
               <TitleLayout> Create Your Own Test Framework </TitleLayout>

@@ -23,7 +23,7 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <StyledImage imageUrl={"java.jpg"}/>
+            <StyledImage imageUrl={"training/java.jpg"}/>
           </CardHeader>
           <CardContent>
             <TitleLayout>Java 8 Training</TitleLayout>
@@ -41,7 +41,7 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <StyledImage imageUrl={"elixir.jpg"}/>
+            <StyledImage imageUrl={"training/elixir.jpg"}/>
           </CardHeader>
           <CardContent>
             <TitleLayout>Elixir for Beginners</TitleLayout>
@@ -60,7 +60,7 @@ export default () => (
       <StyledCardContainer>
         <CardBase interactive={false}>
           <CardHeader>
-            <StyledImage imageUrl={"agile.jpg"}/>
+            <StyledImage imageUrl={"training/agile.jpg"}/>
           </CardHeader>
           <CardContent>
             <TitleLayout> Skills for the Agile Developer</TitleLayout>
