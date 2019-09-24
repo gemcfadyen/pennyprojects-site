@@ -8,7 +8,6 @@ import StyledImage from "./HeaderImage";
 import TitleLayout from "./content/TitleLayout";
 import ConferenceDetails from "./content/conferenceDate";
 import StyledCardContainer from "./StyledContainer";
-
 const StyledDiv = styled.div`
 @media screen and (min-width: 40em) {
    display: flex;
@@ -46,7 +45,7 @@ class TalkCards extends Component {
         <StyledCardContainer>
           <CardBase interactive={false}>
             <CardHeader>
-              <StyledImage imageUrl={"gotoCpnSmall.jpg"}/>
+              <StyledImage imageUrl={"/gotoCpnSmall.jpg"}/>
             </CardHeader>
             <br/>
             <CardContent>
